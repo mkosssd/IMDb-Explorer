@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { createBrowserRouter,RouterProvider} from 'react-router-dom';
+import Root from './Components/Root';
+import HomePage from './Pages/HomePage';
+import About from './Pages/About';
+import PopularMovies from './Pages/PopularMovies';
+import SearchTitles from './Pages/SearchTitles';
+import PopularTV from './Pages/PopularTV';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {path:'/',element:<Root/>,children:[
+      {path:'/',element:<HomePage/>},
+      {path:'/search',element:<SearchTitles/>,children:[
+        {path:'?title=:title'}
+      ]},
+      {path:'/popular-movies',element:<PopularMovies/>},
+      {path:'/popular-tv-shows',element:<PopularTV/>},
+      {path:'/about',element:<About/>},
+    ]}
+  ])
+  return <RouterProvider router ={router}/>
 }
 
 export default App;
