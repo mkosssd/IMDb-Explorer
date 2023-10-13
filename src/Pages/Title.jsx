@@ -2,11 +2,14 @@ const Title = (props) => {
 	console.log(props.props.image);
 	console.log("dsdsdsadhbj");
 	const prop = props.props;
-	if(prop.title==''||prop.title==undefined){
-		return
+	if (
+		prop.title == "" ||
+		prop.title == undefined
+	) {
+		return;
 	}
 	return (
-		<div className="card border border-primary shadow-0 col-4 mx-2">
+		<div className="card border border-primary mx-1 col-3  my-2">
 			<div
 				className="bg-image hover-overlay ripple"
 				data-mdb-ripple-color="light"
