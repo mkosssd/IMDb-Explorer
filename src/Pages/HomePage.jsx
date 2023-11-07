@@ -23,7 +23,7 @@ const HomePage = () => {
 	const titleInputRef = useRef();
 	return (
 		<>
-			<div className="container my-5">
+			<div className=" my-5">
 				<div className="row text-white  rounded-2 my-5">
 					<div className="col-6 bg-primary rounded-start-2 py-5">
 						<div className="my-5 py-5">

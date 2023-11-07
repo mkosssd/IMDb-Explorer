@@ -41,7 +41,7 @@ const Header = () => {
 									Search Titles
 								</NavLink>
 							</li>
-							<li className="nav-item mx-2">
+							{/* <li className="nav-item mx-2">
 								<NavLink
 									to="/popular-tv-shows"
 									className="nav-link active"
@@ -56,7 +56,7 @@ const Header = () => {
 								>
 									Popular Movies
 								</NavLink>
-							</li>
+							</li> */}
 							<li className="nav-item mx-2">
 								<NavLink
 									to="/about"

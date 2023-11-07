@@ -1,7 +1,6 @@
 const Title = (props) => {
-	console.log(props.props.image);
-	console.log("dsdsdsadhbj");
 	const prop = props.props;
+	console.log(prop);
 	if (
 		prop.title == "" ||
 		prop.title == undefined
@@ -9,10 +8,10 @@ const Title = (props) => {
 		return;
 	}
 	return (
-		<div className="card border border-primary mx-1 col-3  my-2">
+		<div className=" d-flex text-start py-2 my-1 row border-0 ">
+
 			<div
-				className="bg-image hover-overlay ripple"
-				data-mdb-ripple-color="light"
+				className=" col-2"
 			>
 				<img
 					src={
@@ -20,21 +19,35 @@ const Title = (props) => {
 							? prop.image.url
 							: "https://as2.ftcdn.net/v2/jpg/04/00/24/31/1000_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg"
 					}
-					className="img-fluid"
-					width="100%"
+					height="150px"
+					// width="400px"/
+					width="100px"
+					className="rounded"
+					style={{ objectFit: 'contain' }}
 				/>
-				<a href="#!">
-					<div className="mask"></div>
-				</a>
+
 			</div>
 
-			<div className="card-body">
-				<h5 className="card-title">
-					{prop.title}
-				</h5>
-				<p className="card-text"></p>
+			<div className="col p-3">
+				<div className="row">
 
-				{/* <button type="button" className="btn btn-primary">Button</button> */}
+					<h5 className="h6 col-12 py-1 my-0 ">
+						{prop.title}
+					</h5>
+					{prop.year && <p className="fw-semibold py-0 my-0 small">
+						Year: {prop.year}
+					</p>}
+					<p className="py-0 my-0 fw-semibold small">
+
+						Cast:	{prop.principals && prop.principals.map(res => <span className=" me-2 ">{res.name}. </span>)}
+					</p>
+					<p className="py-0 my-0 small fw-semibold">
+						Title Type: <span className="text-capitalize">	{prop.titleType}</span>
+					</p>
+					{prop.runningTimeInMinutes && <p className="py-0 my-0 small fw-semibold">
+						Running Time:	{prop.runningTimeInMinutes}M
+					</p>}
+				</div>
 			</div>
 		</div>
 	);
