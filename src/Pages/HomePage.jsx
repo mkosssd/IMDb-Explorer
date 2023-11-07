@@ -75,6 +75,7 @@ const HomePage = () => {
 									<li className="list-group-item">
 										Official Site:{" "}
 										<a
+										rel="noreferrer"
 											href="https://www.imdb.com/"
 											target="_blank"
 											className="text-decoration-none"

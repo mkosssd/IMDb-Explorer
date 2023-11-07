@@ -20,6 +20,7 @@ const Title = (props) => {
 							: "https://as2.ftcdn.net/v2/jpg/04/00/24/31/1000_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg"
 					}
 					height="150px"
+					alt="titleImage"
 					// width="400px"/
 					width="100px"
 					className="rounded"
