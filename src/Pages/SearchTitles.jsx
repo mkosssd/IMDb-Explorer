@@ -1,7 +1,6 @@
+import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Title from "./Title";
-import { useEffect, useState } from "react";
-import MoreFeatures from "./MoreFeatures";
 // const off_titles = [
 // 	{
 // 		id: "/title/tt6486762/",
@@ -222,7 +221,7 @@ const SearchTitles = () => {
 			}
 		};
 		getTitleDetails();
-	}, []);
+	});
 	const tilte = titleList.map((res) => (
 		<Title
 			props={res}
