@@ -2,8 +2,8 @@ const Title = (props) => {
 	const prop = props.props;
 	console.log(prop);
 	if (
-		prop.title == "" ||
-		prop.title == undefined
+		prop.title === "" ||
+		prop.title === undefined
 	) {
 		return;
 	}
