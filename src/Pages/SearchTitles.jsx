@@ -221,7 +221,7 @@ const SearchTitles = () => {
 			}
 		};
 		getTitleDetails();
-	});
+	}, [title]);
 	const tilte = titleList.map((res) => (
 		<Title
 			props={res}
