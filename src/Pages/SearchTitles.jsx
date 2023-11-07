@@ -196,7 +196,7 @@ const SearchTitles = () => {
 				method: "GET",
 				headers: {
 					"X-RapidAPI-Key":
-						"febfb4ee14mshe5d5db9d2d21fa6p15344fjsnac84ecdeaa78	",
+						"876015df4bmsh4417d2d373bdce7p130c0fjsn2099047ebafb	",
 					"X-RapidAPI-Host":
 						"imdb8.p.rapidapi.com",
 				},
@@ -234,7 +234,7 @@ const SearchTitles = () => {
 				<div className="  text-center">
 					<div className="row">
 
-						{!isLoading && <ul className=" list-group border col-6">
+						{!isLoading && <ul className=" list-group border border-primary col-6" >
 							<li className="list-group-item border-0 ">
 
 								{tilte}
