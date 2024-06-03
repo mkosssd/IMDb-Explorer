@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/IMDb-Explorer/static/css/main.546fe42a.css",
+    "main.js": "/IMDb-Explorer/static/js/main.d435164c.js",
+    "static/js/787.9f357171.chunk.js": "/IMDb-Explorer/static/js/787.9f357171.chunk.js",
+    "static/media/logo.svg": "/IMDb-Explorer/static/media/logo.25b189fd17b380e3b41015ef3c881990.svg",
+    "index.html": "/IMDb-Explorer/index.html",
+    "main.546fe42a.css.map": "/IMDb-Explorer/static/css/main.546fe42a.css.map",
+    "main.d435164c.js.map": "/IMDb-Explorer/static/js/main.d435164c.js.map",
+    "787.9f357171.chunk.js.map": "/IMDb-Explorer/static/js/787.9f357171.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.546fe42a.css",
+    "static/js/main.d435164c.js"
+  ]
+}
