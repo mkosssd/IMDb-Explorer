@@ -3,6 +3,7 @@ import {
 	createSearchParams,
 	useNavigate,
 } from "react-router-dom";
+import './HomePage.css'
 const HomePage = () => {
 	const navigate = useNavigate();
 	const SubmitHandler = (e) => {
@@ -23,14 +24,14 @@ const HomePage = () => {
 	const titleInputRef = useRef();
 	return (
 		<>
-			<div className="container my-5">
-				<div className="row text-white  rounded-2 my-5">
-					<div className="col-6 bg-primary rounded-start-2 py-5">
-						<div className="my-5 py-5">
-							<h1 className="display-3 fw-bold p-5 my-5">
+			<div className="container my-md-5">
+				<div className="row text-white  rounded-2 my-md-5">
+					<div className="col-md-6 bg-primary rounded-start-2 py-md-5">
+						<div className="my-md-5 py-md-5">
+							<h1 className="pageHeading fw-bold py-4 text-center p-md-5 my-md-5">
 								{" "}
 								Search Movies & TV Shows with{" "}
-								<span className="display-1">
+								<span className="display-1 d-block">
 									IMDb Explorer{" "}
 									<span className="fw-bold">
 										.
@@ -39,8 +40,8 @@ const HomePage = () => {
 							</h1>
 						</div>
 					</div>
-					<div className="col-6 rounded-end-2 py-5 text-primary bg-light">
-						<div className="my-5 py-5 text-center">
+					<div className="col-md-6 rounded-end-2 py-md-5 text-primary bg-light">
+						<div className="my-md-5 py-4 py-md-5 text-center">
 							<h2 className="fw-bold display-5">
 								Search your title here!
 							</h2>
@@ -78,6 +79,7 @@ const HomePage = () => {
 											href="https://www.imdb.com/"
 											target="_blank"
 											className="text-decoration-none"
+											rel="noreferrer"
 										>
 											IMDb{" "}
 											<i className="bi bi-box-arrow-up-right"></i>

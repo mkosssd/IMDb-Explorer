@@ -1,0 +1,9 @@
+.pageHeading {
+    font-size: 3.5rem;
+}
+@media screen and (max-width:991px) {
+    .pageHeading{
+
+        font-size: 1.2rem;
+    }
+}
