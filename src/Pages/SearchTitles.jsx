@@ -42,7 +42,7 @@ const SearchTitles = () => {
       }
     }
     getTitleDetails()
-  }, [])
+  })
   const tilte = titleList.map(res => <Title props={res} key={res.id}></Title>)
   return (
     <>
